@@ -1,27 +1,32 @@
-[Home](/) | [Projects](/projects) | [About](/about)
-
 ---
 ---
 
 # Projects
 
-## Materials Research (Navy-Funded)
-**Role:** Research Assistant  
-**Focus:** Advanced materials characterization and testing.
+## Research & Engineering Work
 
-- Investigated material behavior under controlled conditions
-- Supported ongoing Navy-related research initiatives
-- Tools: MATLAB, laboratory instrumentation, data analysis
+<div style="display:flex; gap:20px; margin-bottom:30px; align-items:center;">
+  <a href="/projects/materials-research">
+    <img src="/images/materials-thumb.png" alt="Materials Research" style="width:200px; border-radius:6px;">
+  </a>
+  <div>
+    <h3><a href="/projects/materials-research">Materials Research (Navy-Funded)</a></h3>
+    <p>
+      Laboratory-based materials research supporting Navy-funded projects,
+      focused on experimental testing and data analysis.
+    </p>
+  </div>
+</div>
 
-*(Details available upon request due to research restrictions)*
-
----
-
-## Thermal System Design Project
-**Context:** Academic / Independent Project
-
-- Designed and analyzed a thermal system to meet performance constraints
-- Modeled heat transfer and system behavior
-- Validated results through simulation
-
-Tools: SolidWorks, MATLAB
+<div style="display:flex; gap:20px; margin-bottom:30px; align-items:center;">
+  <a href="/projects/thermal-system">
+    <img src="/images/thermal-thumb.png" alt="Thermal System Design">
+  </a>
+  <div>
+    <h3><a href="/projects/thermal-system">Thermal System Design</a></h3>
+    <p>
+      Thermal system modeling and simulation performed to meet
+      performance and design constraints.
+    </p>
+  </div>
+</div>
