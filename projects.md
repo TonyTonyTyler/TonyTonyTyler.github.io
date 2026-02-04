@@ -14,12 +14,13 @@
   border-image: linear-gradient(to bottom, #1e90ff, #2ecc71) 1;
   border-radius:8px;
   background:#ffffff;
-   box-shadow:0 2px 6px rgba(0,0,0,0.05);
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
   transition: box-shadow 0.2s ease;
 "
 onmouseover="this.style.boxShadow='0 6px 16px rgba(0,0,0,0.08)'"
 onmouseout="this.style.boxShadow='0 2px 6px rgba(0,0,0,0.05)'"
-">
+>
+
   <a href="/projects/materials-research">
     <img src="/images/materials-thumb.png" alt="Materials Research" style="width:200px; border-radius:6px;">
   </a>
@@ -41,12 +42,12 @@ onmouseout="this.style.boxShadow='0 2px 6px rgba(0,0,0,0.05)'"
   border-radius:10px;
   box-shadow:0 2px 6px rgba(0,0,0,0.05);
   align-items:center;
-   box-shadow:0 2px 6px rgba(0,0,0,0.05);
   transition: box-shadow 0.2s ease;
 "
 onmouseover="this.style.boxShadow='0 6px 16px rgba(0,0,0,0.08)'"
 onmouseout="this.style.boxShadow='0 2px 6px rgba(0,0,0,0.05)'"
-">
+>
+
   <a href="/projects/thermal-system">
     <img src="/images/thermal-thumb.png"
          alt="Thermal System Design"
