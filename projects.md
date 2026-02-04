@@ -5,7 +5,16 @@
 
 ## Research & Engineering Work
 
-<div style="display:flex; gap:20px; margin-bottom:30px; align-items:center;">
+<div style="
+  display:flex;
+  gap:20px;
+  padding:20px;
+  margin-bottom:30px;
+  border-left:5px solid;
+  border-image: linear-gradient(to bottom, #1e90ff, #2ecc71) 1;
+  border-radius:8px;
+  background:#ffffff;
+">
   <a href="/projects/materials-research">
     <img src="/images/materials-thumb.png" alt="Materials Research" style="width:200px; border-radius:6px;">
   </a>
@@ -18,9 +27,20 @@
   </div>
 </div>
 
-<div style="display:flex; gap:20px; margin-bottom:30px; align-items:center;">
+<div style="
+  display:flex;
+  gap:20px;
+  padding:20px;
+  margin-bottom:30px;
+  border:1px solid #e0e0e0;
+  border-radius:10px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+  align-items:center;
+">
   <a href="/projects/thermal-system">
-    <img src="/images/thermal-thumb.png" alt="Thermal System Design">
+    <img src="/images/thermal-thumb.png"
+         alt="Thermal System Design"
+         style="width:200px; border-radius:6px;">
   </a>
   <div>
     <h3><a href="/projects/thermal-system">Thermal System Design</a></h3>
