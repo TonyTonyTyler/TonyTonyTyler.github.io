@@ -6,6 +6,7 @@
 ## Research & Engineering Work
 
 <div style="
+  cursor: pointer;
   display:flex;
   gap:20px;
   padding:20px;
@@ -34,13 +35,14 @@ onmouseout="this.style.boxShadow='0 2px 6px rgba(0,0,0,0.05)'"
 </div>
 
 <div style="
+  cursor: pointer;
   display:flex;
   gap:20px;
   padding:20px;
   margin-bottom:30px;
   border:1px solid #e0e0e0;
   border-radius:10px;
-  box-shadow:0 2px 6px rgba(0,0,0,0.05);
+  box-shadow:0 2px 6px rgba(0,0,0,0.07);
   align-items:center;
   transition: box-shadow 0.2s ease;
 "
