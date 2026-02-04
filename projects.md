@@ -23,7 +23,7 @@ onmouseout="this.style.boxShadow='0 2px 6px rgba(0,0,0,0.05)'"
 >
 
   <a href="/projects/materials-research">
-    <img src="/images/materials-thumb.png" alt="Materials Research" style="width:200px; border-radius:6px;">
+    <img src="/images/materials-thumb.JPEG" alt="Materials Research" style="width:200px; border-radius:6px;">
   </a>
   <div>
     <h3><a href="/projects/materials-research">Materials Research (Navy-Funded)</a></h3>
