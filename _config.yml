@@ -1,3 +1,11 @@
 theme: jekyll-theme-cayman
 title: Tyler Belvin
 description: Mechanical Engineering Graduate
+
+nav:
+  - name: Home
+    link: /
+  - name: Projects
+    link: /projects
+  - name: About
+    link: /about
