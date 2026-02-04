@@ -1,7 +1,6 @@
 [Home](/) | [Projects](/projects) | [About](/about)
 
 ---
-title: Projects
 ---
 
 # Projects
