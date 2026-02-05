@@ -1,5 +1,4 @@
 <nav style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px; padding:12px 0;">
-  <div style="font-weight:600;">[Your Name]</div>
   <div style="display:flex; gap:16px; align-items:center;">
     <a href="/" style="text-decoration:none;">Home</a>
     <details style="position:relative;">
