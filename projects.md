@@ -1,66 +1,42 @@
----
+[Home](/) | [Projects](/projects) | [About](/about)
+
 ---
 
 # Projects
 
-## Research & Engineering Work
+Browse a selection of engineering work. Each project card links to a dedicated page with more detail.
 
-<div style="
-  cursor: pointer;
-  display:flex;
-  gap:20px;
-  padding:20px;
-  margin-bottom:30px;
-  border-left:5px solid;
-  border-image: linear-gradient(to bottom, #1e90ff, #2ecc71) 1;
-  border-radius:8px;
-  background:#ffffff;
-  box-shadow:0 2px 6px rgba(0,0,0,0.05);
-  transition: box-shadow 0.2s ease;
-"
-onmouseover="this.style.boxShadow='0 6px 16px rgba(0,0,0,0.08)'"
-onmouseout="this.style.boxShadow='0 2px 6px rgba(0,0,0,0.05)'"
->
-
-  <a href="/projects/materials-research">
-    <img src="/images/materials-thumb.jpg" alt="Materials Research" style="width:200px; border-radius:6px;">
-  </a>
-  <div>
-    <h3><a href="/projects/materials-research">Materials Research (Navy-Funded)</a></h3>
-    <p>
-      Laboratory-based materials research supporting Navy-funded projects,
-      focused on experimental testing and data analysis.
-    </p>
+<div style="display:grid; gap:24px; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));">
+  <div style="border:1px solid #e5e7eb; border-radius:12px; overflow:hidden; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+    <a href="/projects/materials-research" style="text-decoration:none; color:inherit; display:block;">
+      <img src="/images/materials-thumb.jpg" alt="Materials research thumbnail" style="width:100%; height:190px; object-fit:cover;">
+      <div style="padding:16px;">
+        <h3 style="margin-top:0;">Materials Research (Navy-Funded)</h3>
+        <p>Lab-based testing and data analysis supporting advanced materials research.</p>
+        <p style="margin-bottom:0; color:#2563eb;">View project details →</p>
+      </div>
+    </a>
   </div>
-</div>
 
-<div style="
-  cursor: pointer;
-  display:flex;
-  gap:20px;
-  padding:20px;
-  margin-bottom:30px;
-  border-left:5px solid;
-  border-image: linear-gradient(to bottom, #1e90ff, #2ecc71) 1;
-  border-radius:8px;
-  background:#ffffff;
-  box-shadow:0 2px 6px rgba(0,0,0,0.05);
-  transition: box-shadow 0.2s ease;
-"
-onmouseover="this.style.boxShadow='0 6px 16px rgba(0,0,0,0.08)'"
-onmouseout="this.style.boxShadow='0 2px 6px rgba(0,0,0,0.05)'"
->
+  <div style="border:1px solid #e5e7eb; border-radius:12px; overflow:hidden; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+    <a href="/projects/thermal-system" style="text-decoration:none; color:inherit; display:block;">
+      <img src="/images/thermal-thumb.jpg" alt="Thermal system thumbnail" style="width:100%; height:190px; object-fit:cover;">
+      <div style="padding:16px;">
+        <h3 style="margin-top:0;">Thermal System Design</h3>
+        <p>Simulation-driven design for performance and integration requirements.</p>
+        <p style="margin-bottom:0; color:#2563eb;">View project details →</p>
+      </div>
+    </a>
+  </div>
 
-  <a href="/projects/thermal-system">
-    <img src="/images/thermal-thumb.jpg"
-         alt="Thermal System Design"
-         style="width:200px; border-radius:6px;">
-  </a>
-  <div>
-    <h3><a href="/projects/thermal-system">Thermal System Design</a></h3>
-    <p>
-      Thermal system modeling and simulation performed to meet
-      performance and design constraints.
-    </p>
+  <div style="border:1px solid #e5e7eb; border-radius:12px; overflow:hidden; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.05);">
+    <a href="/projects/mechatronics-build" style="text-decoration:none; color:inherit; display:block;">
+      <img src="/images/placeholder-project.svg" alt="Mechatronics project placeholder thumbnail" style="width:100%; height:190px; object-fit:cover; background:#f8fafc;">
+      <div style="padding:16px;">
+        <h3 style="margin-top:0;">Mechatronics Build</h3>
+        <p>Prototype integrating mechanical, electrical, and control systems.</p>
+        <p style="margin-bottom:0; color:#2563eb;">View project details →</p>
+      </div>
+    </a>
   </div>
 </div>
