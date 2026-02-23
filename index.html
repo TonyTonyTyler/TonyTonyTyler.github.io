@@ -10,7 +10,7 @@
 /* ===============================
    GLOBAL STYLING
 ================================= */
-
+   
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -36,6 +36,16 @@ h1, h2, h3 {
     margin-bottom: 40px;
 }
 
+.expand-note {
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.6;
+    margin-top: -25px;
+    margin-bottom: 35px;
+    letter-spacing: 0.5px;
+}
+
+   
 /* ===============================
    HEADER
 ================================= */
@@ -65,10 +75,13 @@ header p {
     margin-bottom: 25px;
     transition: all 0.25s ease;
     cursor: pointer;
+    background-color: #fff;
 }
 
 .project:hover {
-    border-color: #aaa;
+    border-color: #ccc;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
 .project-summary {
@@ -104,6 +117,23 @@ header p {
     margin-bottom: 15px;
 }
 
+.project h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chevron {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    opacity: 0.6;
+}
+
+.project.open .chevron {
+    transform: rotate(180deg);
+}
+
+   
 /* ===============================
    RESUME SECTION
 ================================= */
@@ -187,11 +217,17 @@ footer {
 ================================= -->
 <section class="container">
     <h2 class="section-title">Projects</h2>
-
+   <p class ="expand-note">Click a project to expand and view details
+   </p>
+   
     <!-- Project 1 (Reserved Navy) -->
     <div class="project" onclick="toggleProject(this)">
-        <h3>Project 1 – Navy Engineering Project</h3>
-        <p class="project-summary">
+        <h3>
+           Project 1 – Navy Engineering Project
+           <span class ="chevron">▼</span>
+        </h3>
+        
+       <p class="project-summary">
             Design and improvement of cryogenic testing 
             environments for insulation materials 
             used in naval high-temperature superconducting 
@@ -271,7 +307,11 @@ footer {
 
     <!-- Project 2 – Fluid Simulation -->
     <div class="project" onclick="toggleProject(this)">
-        <h3>Aerodynamics of a High-Performance Vehicle</h3>
+        <h3>
+            Aerodynamics of a High-Performance Vehicle
+            <span class ="chevron">▼</span>
+
+        </h3>
         <p class="project-summary">
            FIX THE NUMBERS IN HERE
             Designed and optimized a vehicle body in SolidWorks Flow Simulation to maximize downforce while maintaining drag below 950 Lb at 150 mph.
@@ -306,7 +346,11 @@ footer {
 
     <!-- Project 3 – Energy Study -->
     <div class="project" onclick="toggleProject(this)">
-        <h3>Renewable Energy Transition Analysis – New Jersey</h3>
+        <h3>
+           Renewable Energy Transition Analysis – New Jersey
+           <span class ="chevron">▼</span>
+
+        </h3>
         <p class="project-summary">
             Comprehensive evaluation of New Jersey’s energy system with emphasis on expanding solar generation to meet future demand.
         </p>
@@ -377,20 +421,27 @@ function toggleProject(element) {
     if (content.style.maxHeight) {
         content.style.maxHeight = null;
         content.classList.remove("open");
+        element.classList.remove("open");
     } else {
         document.querySelectorAll(".project-content").forEach(section => {
             section.style.maxHeight = null;
             section.classList.remove("open");
         });
 
+        document.querySelectorAll(".project").forEach(proj => {
+            proj.classList.remove("open");
+        });
+
         content.style.maxHeight = content.scrollHeight + "px";
         content.classList.add("open");
+        element.classList.add("open");
     }
 }
 </script>
 
 </body>
 </html>
+
 
 
 
