@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tyler Belvin | Mechanical Engineer</title>
+
+<style>
+
+/* ===============================
+   GLOBAL STYLING
+================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #ffffff;
+    color: #111;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 0;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+/* ===============================
+   HEADER
+================================= */
+
+header {
+    text-align: center;
+    padding: 100px 20px 60px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+/* ===============================
+   PROJECTS
+================================= */
+
+.project {
+    border: 1px solid #e5e5e5;
+    padding: 30px;
+    margin-bottom: 25px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+}
+
+.project:hover {
+    border-color: #aaa;
+}
+
+.project-summary {
+    opacity: 0.75;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.smaller-image {
+    max-height: 300px;
+
+}
+
+.smaller-image2 {
+    max-height: 240px;
+
+}
+
+.project-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.project-content.open {
+    margin-top: 25px;
+}
+
+.project-content p {
+    margin-bottom: 15px;
+}
+
+/* ===============================
+   RESUME SECTION
+================================= */
+
+.resume-section {
+    text-align: center;
+    padding: 60px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.resume-section h2 {
+    margin-bottom: 20px;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 1px solid #111;
+    text-decoration: none;
+    color: #111;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+/* ===============================
+   CONTACT SECTION
+================================= */
+
+.contact {
+    text-align: center;
+    padding: 70px 0;
+}
+
+.contact p {
+    margin: 8px 0;
+}
+
+.contact a {
+    color: #111;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   FOOTER
+================================= */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    border-top: 1px solid #eee;
+    opacity: 0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===============================
+     HEADER
+================================= -->
+<header>
+    <h1>Tyler Belvin</h1>
+    <p>Mechanical Engineering Graduate</p>
+</header>
+
+
+<!-- ===============================
+     PROJECTS
+================================= -->
+<section class="container">
+    <h2 class="section-title">Projects</h2>
+
+    <!-- Project 1 (Reserved Navy) -->
+    <div class="project" onclick="toggleProject(this)">
+        <h3>Project 1 – Navy Engineering Project</h3>
+        <p class="project-summary">
+            Design and improvement of cryogenic testing 
+            environments for insulation materials 
+            used in naval high-temperature superconducting 
+            cables. This involves optimizing an existing
+            cryogenic system, designing, simulating, and building
+            a new environmental chamber, and preparing/testing 
+            materials.
+        </p>
+
+        <img src="images/clinic1.jpeg" class="smaller-image" alt="Gas Helium Rig">
+
+        <div class="project-content">
+            <p>
+                The previous project team created a cryogenic
+                environment to test dialectric and tensile strength
+                at semi-cryogenic temperatures. This was done by 
+                flowing liquid nitrogen through copper tubing, cooling
+                the interior of the cryogenic chamber to -70 C. 
+
+            </p>
+                Following the successful testing of this chamber, it was
+                determined that a new chamber was required to reach
+                lower temperatures. This new chamber would:
+            </p>    
+
+                <br>• Be airtight while still allowing for tensile testing
+                <br>• Have a steel frame for mounting to optical table and 
+                    tensile machine
+                <br>• Include a fan for interior airflow that can survive
+                    these low temps
+                <br>• Incorporate sevearl 'quality of life' improvements 
+                    such a as sealing door, and a viewing window for potential 
+                    Digital Image Corrolation Testing (DIC) 
+                
+            </p>
+                Designed, simulated, and tested a fan which
+                uses magnetic induced roation to keep the fan motor
+                outside of the environment, preventing seizing from low temps.
+                Fan rotated up to 600 RPM, providing significantly improved
+                airflow inside the chamber (Test to see how much colder chamber
+                gets with/without fan).
+                
+            </p>
+
+        <img src="images/clinicfan.gif" alt="Gas Helium Rig">
+
+            <p>
+             Should this picture be fan simulation instead, or should i have both here
+
+            </p>
+
+            Created an arduino software to read and record thermistor values
+            for a Gas Helium system for temperature curve. Allowing for 
+            testing to be conducted more regularly. 
+
+            </p>
+
+            <br>• Previously, system would be run for several days, due
+                to unknown length of time required for cooling 
+            <br>• Arduino setup logged data over a cooling period, and a Python
+                script cleaned the data, giving a cooling curve
+            <br>• System only required 10 (FIX THIS NUMBER IF NEEDED) hours 
+                to reach steady state
+
+
+
+                
+                
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Project 2 – Fluid Simulation -->
+    <div class="project" onclick="toggleProject(this)">
+        <h3>Aerodynamics of a High-Performance Vehicle</h3>
+        <p class="project-summary">
+           FIX THE NUMBERS IN HERE
+            Designed and optimized a vehicle body in SolidWorks Flow Simulation to maximize downforce while maintaining drag below 950 Lb at 150 mph.
+        </p>
+
+        <img src="images/fluid1.png" alt="Vehicle CFD Image">
+
+        <div class="project-content">
+            <p>
+                This project focused on aerodynamic optimization of a high-performance vehicle body. The design constraint required drag to remain below 950 Lb at 150 mph while maximizing aerodynamic downforce.
+            </p>
+
+            <p>
+                The strategy emphasized underbody flow acceleration, rear diffuser geometry, and multi-element spoiler design. SolidWorks Flow Simulation was used iteratively to refine geometry and evaluate lift-to-drag performance.
+            </p>
+
+            <p>
+                Final results at 150 mph:
+                <br>• Drag: 895 Lb
+                <br>• Downforce: 2392 N
+                <br>• Lift-to-Drag Ratio: 2.67
+            </p>
+
+            <p>
+                Hand calculations validated CFD results, including stagnation pressure and drag predictions. Velocity sweeps confirmed expected quadratic scaling of aerodynamic forces and cubic power growth.
+            </p>
+
+            <img src="images/fluid2.png" alt="Pressure Surface Plot">
+        </div>
+    </div>
+
+
+    <!-- Project 3 – Energy Study -->
+    <div class="project" onclick="toggleProject(this)">
+        <h3>Renewable Energy Transition Analysis – New Jersey</h3>
+        <p class="project-summary">
+            Comprehensive evaluation of New Jersey’s energy system with emphasis on expanding solar generation to meet future demand.
+        </p>
+
+        <img src="images/energy1.png" class="smaller-image" alt="Energy Chart">
+
+        <div class="project-content">
+            <p>
+                This project analyzed the current energy infrastructure of New Jersey and evaluated pathways for transitioning toward increased renewable energy generation, with a focus on solar power expansion.
+            </p>
+
+            <p>
+                The study examined energy production sources, demand growth projections, environmental impacts, and long-term grid feasibility.
+            </p>
+
+            <p>
+                Findings indicated that large-scale solar expansion represents the most viable pathway toward long-term decarbonization, though grid modernization will be necessary to support distributed generation.
+            </p>
+
+            <img src="images/energy2.png" class="smaller-image2" alt="Solar Projection Graph">
+
+            <img src="images/energy3.png" class="smaller-image" alt="Solar Projection Graph">
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ===============================
+     RESUME DOWNLOAD
+================================= -->
+<section class="resume-section">
+    <h2>Resume</h2>
+    <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+</section>
+
+
+<!-- ===============================
+     CONTACT
+================================= -->
+<section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:tyler.c.belvin@gmail.com">tyler.c.belvin@gmail.com</a></p>
+    <p>Phone: 609 707 4672</p>
+    <p>LinkedIn: 
+        <a href="https://linkedin.com/in/tyler-belvin-544195244/" target="_blank">
+            linkedin.com/in/tyler-belvin-544195244/
+        </a>
+    </p>
+</section>
+
+
+<!-- ===============================
+     FOOTER
+================================= -->
+<footer>
+    © 2026 Tyler Belvin
+</footer>
+
+
+<!-- ===============================
+     JAVASCRIPT
+================================= -->
+<script>
+function toggleProject(element) {
+    const content = element.querySelector(".project-content");
+
+    if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        content.classList.remove("open");
+    } else {
+        document.querySelectorAll(".project-content").forEach(section => {
+            section.style.maxHeight = null;
+            section.classList.remove("open");
+        });
+
+        content.style.maxHeight = content.scrollHeight + "px";
+        content.classList.add("open");
+    }
+}
+</script>
+
+</body>
+</html>
