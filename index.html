@@ -45,8 +45,16 @@ h1, h2, h3 {
     letter-spacing: 0.5px;
 }
 
+:root {
+    --accent: #4a7bd1;
+    --accent-light: #eaf3ff;
+}
 
-
+.section-title {
+    font-size: 26px;
+    margin-bottom: 40px;
+    color: var(--accent);
+}
    
 /* ===============================
    NAVBAR
@@ -85,6 +93,7 @@ h1, h2, h3 {
 
 .nav-links a:hover {
     opacity: 1;
+    color: var(--accent);
 }
 
 /* ===============================
@@ -92,8 +101,9 @@ h1, h2, h3 {
 ================================= */
 
 .hero {
-    background-color: #fafafa;
-    padding: 60px 0;
+    background: #eaf3ff;
+    padding: 70px 0;
+    border-bottom: 1px solid #dbe7ff;
 }
 
 .hero-container {
@@ -104,6 +114,22 @@ h1, h2, h3 {
     gap: 60px;
 }
 
+   .profile-pic {
+    flex: 0 0 180px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #e6eef7;
+}
+   
 .summary {
     flex: 2;
     font-size: 16px;
@@ -249,7 +275,8 @@ header p {
 }
 
 .resume-btn:hover {
-    background-color: #111;
+    background-color: var(--accent);
+    border-color: var(--accent);
     color: #fff;
 }
 
@@ -318,6 +345,11 @@ footer {
 
 <section class="hero">
     <div class="hero-container">
+
+        <div class="profile-pic">
+            <img src="images/Headshot.jpg" alt="Tyler Belvin">
+        </div>
+       
         <div class="summary">
             <p>
                 Mechanical engineering graduate with experience in thermal systems, 
@@ -572,6 +604,7 @@ function toggleProject(element) {
 
 </body>
 </html>
+
 
 
 
