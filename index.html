@@ -546,28 +546,40 @@ footer {
         <span class="chevron">▼</span>
     </h3>
     <p class="project-summary">
-        Design and thermal analysis of an industrial conveyor oven system intended for continuous material processing. This project covers insulation design, transient heat transfer modeling, and tray geometry optimization to minimize cook time using MATLAB Simscape and SolidWorks Simulation.
+        Design and thermal analysis of an industrial conveyor oven system intended for continuous material processing.
+       This project covers insulation design, transient heat transfer modeling, and tray geometry optimization to
+       minimize cook time using MATLAB Simscape and SolidWorks Simulation.
     </p>
 
     <img src="images/oven_placeholder_main.png" class="smaller-image" alt="Industrial Oven Thermal Analysis">
 
     <div class="project-content">
         <p>
-            The first challenge involved designing the insulation system for the oven, which needed to maintain an interior temperature of 177°C (350°F) within a 5,400W power budget. A steady-state thermal network was built in MATLAB Simscape, modeling convection, conduction through three wall layers, and radiation to the surroundings. Hand calculations were used to determine the minimum insulation thickness, with 101.6mm (4 in) of mineral wool selected to provide a comfortable safety margin.
+            The first challenge involved designing the insulation system for the oven, which needed to maintain an
+           interior temperature of 350°F (177°C) within a 5,400W power budget. A steady-state thermal network was
+           built in MATLAB Simscape, modeling convection, conduction through three wall layers, and radiation to
+           the surroundings. Hand calculations were used to determine the minimum insulation thickness, with 1.76 in
+           (45 mm) of mineral wool selected to provide a comfortable safety margin.
         </p>
 
         <p>
-            A transient Simscape model was then developed to estimate the time required to bring a tray of material to a core temperature of 71°C (160°F). Rather than using a single lumped thermal mass, the material was divided into three concentric layers to better capture the internal temperature gradient — a necessary step given a Biot number of 3.2, well above the 0.1 threshold for lumped capacitance validity.
+            A transient Simscape model was then developed to estimate the time required to bring a tray of material 
+           to a core temperature of 160°F (71°C). Rather than using a single lumped thermal mass, the material was 
+           divided into three concentric layers to better capture the internal temperature gradient — a necessary
+           step given a Biot number of 3.2, well above the 0.1 threshold for lumped capacitance validity.
         </p>
 
         <p>
-            To reduce cook time, the flat tray was redesigned as a muffin-tin style tube array, reducing the characteristic conduction length from 10.16 cm to 3.18 cm. This reduced core cook time by 72%, from 142 minutes to approximately 40 minutes, validated through SolidWorks FEA simulation.
+            To reduce cook time, the flat tray was redesigned as a muffin-tin style tube array, reducing the conduction 
+           length from 2 in to 1.25in. This reduced core cook time by 72%, from 142 minutes to approximately
+           40 minutes, validated through SolidWorks FEA simulation.
         </p>
 
         <img src="images/oven_placeholder_tray.png" class="smaller-image" alt="Redesigned Muffin Tin Tray">
 
         <p>
-            Results were compared across all three methods — MATLAB Simscape, SolidWorks original geometry, and SolidWorks redesigned tray — showing strong agreement between models and confirming the effectiveness of the tray redesign.
+            Results were compared across all three methods — MATLAB Simscape, SolidWorks original geometry, and SolidWorks
+           redesigned tray — showing strong agreement between models and confirming the effectiveness of the tray redesign.
         </p>
 
         <img src="images/oven_placeholder_graph.png" class="smaller-image" alt="Core Temperature vs Time Comparison">
