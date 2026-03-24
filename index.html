@@ -437,8 +437,7 @@ footer {
 
         <img src="images/clinicfan.gif" alt="Gas Helium Rig">
 
-            <p>
-             Should this picture be fan simulation instead, or should i have both here
+            <!-- <p> -->
 
             </p>
 
@@ -476,8 +475,9 @@ footer {
 
         </h3>
         <p class="project-summary">
-           FIX THE NUMBERS IN HERE
             Designed and optimized a vehicle body in SolidWorks Flow Simulation to maximize downforce while maintaining drag below 950 Lb at 150 mph.
+            
+
         </p>
 
         <img src="images/fluid1.png" alt="Vehicle CFD Image">
@@ -494,7 +494,7 @@ footer {
             <p>
                 Final results at 150 mph:
                 <br>• Drag: 895 Lb
-                <br>• Downforce: 2392 N
+                <br>• Downforce: 2392 Lb
                 <br>• Lift-to-Drag Ratio: 2.67
             </p>
 
@@ -624,37 +624,48 @@ footer {
         </div>
     </div>
 
-<!-- Project 6 – MMT Scale -->
-    <div class="project" onclick="toggleProject(this)">
-        <h3>
-           Digital Scale
-           <span class ="chevron">▼</span>
+<!-- Project 5 – Digital Scale -->
+<div class="project" onclick="toggleProject(this)">
+    <h3>
+        Personal Digital Scale
+        <span class="chevron">▼</span>
+    </h3>
+    <p class="project-summary">
+        Design and fabrication of a fully functional personal digital scale, accurate to within 1% across a 0-3 kg range. The project
+       involved mechanical design, machining, electronics, and embedded programming.
+    </p>
 
-        </h3>
-        <p class="project-summary">
-            this is a placeholder
+    <img src="images/scale_assembled.jpg" class="smaller-image" alt="Assembled Digital Scale">
+
+    <div class="project-content">
+        <p>
+            The mechanical components — including the load cell, spacer block, load tray mount, and baseplate — were designed in SolidWorks
+           and machined from aluminum stock using a lathe, mill, and waterjet cutter. SolidWorks Simulation was used during the load cell design
+           to verify that the target strain of 0.4–0.6 milli-strain would be achieved under a 5 kgf load, ensuring accurate measurements before any physical fabrication began.
         </p>
 
-        <img src="images/energy1.png" class="smaller-image" alt="Energy Chart">
+        <p>
+            The electronics were built around an ATMEGA 328 microcontroller extracted from an Arduino Uno and embedded into a custom PCB, paired
+           with an HX711 load cell amplifier and an LCD display. The Arduino code was modified from a base template to include a calibration 
+           factor, an exponential moving average filter to smooth readings, and a hysteresis filter to stabilize the display. A tare function 
+           and four-unit conversion between grams, kilograms, pounds, and ounces were also implemented.
+        </p>
 
-        <div class="project-content">
-            <p>
-                this is a placehodler
-            </p>
+        <p>
+            The enclosure was 3D printed in semi-transparent resin, a deliberate design choice inspired by the resurgence of the transparent 
+           consumer electronics aesthetic. This allows users to see the internal load cell, PCB, and wiring through the shroud. Magnetic fasteners
+           were incorporated into the base connection for tool-free access to the interior, while remaining compliant with IP31 specifications.
+        </p>
 
-            <p>
-                this is another placeholder
-            </p>
+        <img src="images/scale_transparent.jpg" class="smaller-image" alt="Transparent Scale Shroud">
 
-            <p>
-                this is another placeholder
-            </p>
-
-            <img src="images/energy2.png" class="smaller-image2" alt="Solar Projection Graph">
-
-            <img src="images/energy3.png" class="smaller-image" alt="Solar Projection Graph">
-        </div>
+        <p>
+            The completed scale measures accurately from 0 to 3 kg within a 1% tolerance, with a stable display and no rattling internal components. Challenges 
+           encountered during the build included a strain gauge bubble causing drift readings — resolved by replacing the gauges — and an LCD connection fault 
+           resolved by resoldering the PCB connections.
+        </p>
     </div>
+</div>
    
 
    
