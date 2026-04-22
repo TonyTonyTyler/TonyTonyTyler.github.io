@@ -411,34 +411,54 @@ footer {
             </p>
 
             <p>
-                A new cryogenic environmental chamber was designed to:
-         <!--   </p>  -->  
-
-       <!--     <p> -->
-               
-                <br>• Maintaining an airtight seal while allowing tensile testing
-                <br>• Mount directly on an optical table and tensile machine via a steel frame
-                <br>• Integrate internal airflow circulation
-                <br>• Include observation capability for future Digital Image Correlation (DIC) testing 
-                
-            </p>
-               I designed, simulated, and tested a magnetically induced rotational fan system
-               that keeps the motor outside of the cryogenic environment. Magnetic coupling drives
-              the internal fan, preventing motor seizure at low temperatures while preserving chamber integrity. 
+            A new cryogenic environmental chamber was designed and built to address these 
+            requirements. Key design features include:
+            <br>• Airtight seal while allowing tensile testing access
+            <br>• Steel frame mounting directly to an optical table and tensile machine
+            <br>• Integrated internal airflow circulation
+            <br>• Observation windows for future Digital Image Correlation (DIC) testing
+            
             </p>
 
             <p>
-               The fan prototype operated up to 600 RPM, which will significantly improve
-               airflow inside the chamber, and increasing thermal uniformity. 
-               
-                
+               To drive internal airflow without exposing a motor to cryogenic temperatures,
+               I designed, simulated, and tested a magnetically coupled fan system. The motor
+               is mounted externally, driving magnets to couple with the internal fan, preventing
+               motor seizure at low temperatures while preserving chamber integrity. The fan
+               prototype demonstrated operation up to 600 RPM, significantly improving thermal uniformity
+               inside the chamber. The current iteration of the fan is expected to reach higher speeds,
+               however has not yet been fully tested. 
+            </p>           
+
+            <img src="images/clinicfan.gif" alt="Magnetic Fan Prototype">
+
+            <p>
+               To support the system design and predict cooling behavior, a model of the cryogenic chamber
+               was developed in MATLAB Simulink using the Simscape two phase fluid library. The model captures
+               the two phase transition of liquid nitrogen inside the supply pipe, accounting for the liqui-vapor 
+               phases as the nitrogen absorbs heat and begins to boil. 
             </p>
 
-        <img src="images/clinicfan.gif" alt="Gas Helium Rig">
-
-            <!-- <p> -->
-
+            <p>
+               The simulation predicted a steady state chamber temperature similar to current experimental results.
+               Cooldown time was somewhat faster in the model than obeserved in physical testing, likely due to simplifications
+               in heat leak assumptions. Refining these parameters is an area of ongoing calibration as more experimental
+               data become available.
             </p>
+
+            <img src="images/simcooldown.png" class="smaller-image" alt="Simscape Cooldown Simulation Output">
+
+           
+            <p>  
+               Initial testing of the new chamber has shown promising results. With only one of two planned
+               fans currently installed, the system reached approximately 135 K in under 25 minutes, a substantial 
+               improvement over the first generation chamber, which achieved a minimum temperature of 200 K. Further
+               improvemenets are expected as the second fan is installed, and remaining system refinements are completed. 
+            </p>
+
+        <img src="images/newchamber.jpg" class="smaller-image" alt="New Cryogenic Chamber">
+           
+            <p>
 
             Additionally, I created an arduino software to read and record thermistor 
             values for a gas helium system; a system designed by a previous PhD student,
